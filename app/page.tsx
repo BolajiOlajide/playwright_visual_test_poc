@@ -12,11 +12,10 @@ const Home = () => {
   return (
     <div>
       <h1>Random Fact - Home Page</h1>
+      <h2>Hello World</h2>
       <p>{randomFact}</p>
       <nav>
-        <Link href="/page1">Go to Page 1</Link> <br />
-        <Link href="/page2">Go to Page 2</Link> <br />
-        <Link href="/page3">Go to Page 3</Link>
+        <Link href="/page1">Go to Page 1</Link>
       </nav>
     </div>
   );
