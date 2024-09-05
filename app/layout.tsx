@@ -5,6 +5,9 @@ export default function RootLayout({
   }) {
     return (
       <html lang="en">
+        <head>
+            <title>Random Facts</title>
+        </head>
         <body>{children}</body>
       </html>
     )
