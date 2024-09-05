@@ -10,7 +10,8 @@ test('home page', async ({ page }) => {
 
     await expect(page.getByRole('heading', { name: 'Random Fact - Home Page' })).toBeVisible();
 
-    // await expect(page).toHaveScreenshot();
+    await expect(page).toHaveScreenshot();
+    expect(await page.screenshot()).toMatchSnapshot();
 });
 
 test('button to show text shows text', async ({ page }) => {
@@ -18,6 +19,7 @@ test('button to show text shows text', async ({ page }) => {
 
     await page.getByRole('button', { name: 'Show' }).click();
     await expect(page.getByTestId('hidden-text')).toBeVisible();
-    // await page.screenshot({ path: 'screenshots/homepage_with.png' });
+
     await expect(page).toHaveScreenshot();
+    expect(await page.screenshot()).toMatchSnapshot();
 });
